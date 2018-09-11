@@ -39,7 +39,6 @@ html, body{
 }
 
 body{
-    
     background-color: black;
 }
 
@@ -91,4 +90,62 @@ small{
     margin-top: 3px;
 }
 
+.eye-1{
+    position: absolute;
+    margin-top: 360;
+    margin-left: 40;
+    width:180px;
+}
+
+.eye-2{
+    position: absolute;
+    margin-top: 230;
+    margin-left: 1100;
+    width:100px;
+}
+
+.eye-3{
+    position: absolute;
+    margin-top: 500;
+    margin-left: 500; 
+    width:80px;
+}
+
+.eye-4{
+    position: absolute;
+    margin-top: 20;
+    margin-left: 720;
+    width:90px;
+}
+
+.eye-5{
+    position: absolute;
+    margin-top: 440;
+    margin-left: 1050;
+    width:90px;
+}
+
+.search{
+    position: absolute;
+    margin-top: 90;
+    margin-left: 140;
+    width:80px;
+}
+
+@keyframes blink {
+    0% { opacity: 0.0; }
+    28% { opacity: 0.0; }
+    30% { opacity: 0.2; }
+    50% { opacity: 0.5; } 
+    70% { opacity: 0.3; }
+    80% { opacity: 0.1; }
+    100% { opacity: 0.0; } 
+}
+
+.anim-blink-1{
+    animation-name: blink;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    transition: ease-in;
+}
     
