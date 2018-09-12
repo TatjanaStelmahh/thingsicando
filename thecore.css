@@ -11,6 +11,11 @@ body{
     background-color: white;
 }
 
+.empty{
+    height:20px;
+    position: fixed;
+}
+
 .footer{
     position:fixed;
     bottom:0;
@@ -35,158 +40,78 @@ small{
     font-size: 12px;
 }
 
-.el-box-1{
-    height: 110px;
-    width: 110px;
-    margin-left: 3px;
-    margin-top: 3px;
-    border: solid 1px green;
-}
-.el-b-box-1{
-    height: 118px;
-    width: 118px;
-    border: solid 3px green;
+
+.elements{
+    display: flex;
+    max-width: 420px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
 }
 
-.el-box-2{
-    height: 110px;
-    width: 110px;
-    margin-left: 3px;
-    margin-top: 3px;
-    border: solid 1px green;
-}
-.el-b-box-2{
+.elements figure{
     height: 118px;
     width: 118px;
-    border: solid 3px green;
+   
+    margin:5px;
 }
 
-.el-box-3{
+.elements figcaption {
     height: 110px;
     width: 110px;
     margin-left: 3px;
     margin-top: 3px;
-    border: solid 1px green;
-}
-.el-b-box-3{
-    height: 118px;
-    width: 118px;
-    border: solid 3px green;
+   
 }
 
-.el-box-4{
-    height: 110px;
-    width: 110px;
-    margin-left: 3px;
-    margin-top: 3px;
-    border: solid 1px green;
+.al-r{
+    text-align: right;
 }
-.el-b-box-4{
-    height: 118px;
-    width: 118px;
-    border: solid 3px green;
+h3{
+    text-align: right;
 }
 
-.el-box-5{
-    height: 110px;
-    width: 110px;
-    margin-left: 3px;
-    margin-top: 3px;
-    border: solid 1px green;
-}
-.el-b-box-5{
-    height: 118px;
-    width: 118px;
-    border: solid 3px green;
+h4{
+    margin-top: 2px;
+    margin-left: 2px;
 }
 
-.el-box-6{
-    height: 110px;
-    width: 110px;
-    margin-left: 3px;
-    margin-top: 3px;
-    border: solid 1px green;
+.el-col-blu{
+    color:#13bdb7;
+    border: solid 3px #13bdb7;
 }
-.el-b-box-6{
-    height: 118px;
-    width: 118px;
-    border: solid 3px green;
+.el-col-blu-in{
+    border: solid 1px #13bdb7;
 }
 
-.el-box-7{
-    height: 110px;
-    width: 110px;
-    margin-left: 3px;
-    margin-top: 3px;
-    border: solid 1px green;
+.el-col-pnk{
+    color:#f2118d;
+    border: solid 3px #f2118d;
 }
-.el-b-box-7{
-    height: 118px;
-    width: 118px;
-    border: solid 3px green;
+.el-col-pnk-in{
+    border: solid 1px #f2118d;
 }
 
-.el-box-8{
-    height: 110px;
-    width: 110px;
-    margin-left: 3px;
-    margin-top: 3px;
-    border: solid 1px green;
+.el-col-grn{
+    color:#09f266;
+    border: solid 3px #09f266;
 }
-.el-b-box-8{
-    height: 118px;
-    width: 118px;
-    border: solid 3px green;
+.el-col-grn-in{
+    border: solid 1px #09f266;
 }
 
-.el-box-9{
-    height: 110px;
-    width: 110px;
-    margin-left: 3px;
-    margin-top: 3px;
-    border: solid 1px green;
+.el-col-ylw{
+    color:#e5fa00;
+    border: solid 3px #e5fa00;
 }
-.el-b-box-9{
-    height: 118px;
-    width: 118px;
-    border: solid 3px green;
+.el-col-ylw-in{
+    border: solid 1px #e5fa00;
 }
 
-.el-box-10{
-    height: 110px;
-    width: 110px;
-    margin-left: 3px;
-    margin-top: 3px;
-    border: solid 1px green;
+.el-col-red{
+    color:#ff0303;
+    border: solid 3px #ff0303;
 }
-.el-b-box-10{
-    height: 118px;
-    width: 118px;
-    border: solid 3px green;
-}
-
-.el-box-11{
-    height: 110px;
-    width: 110px;
-    margin-left: 3px;
-    margin-top: 3px;
-    border: solid 1px green;
-}
-.el-b-box-11{
-    height: 118px;
-    width: 118px;
-    border: solid 3px green;
-}
-
-.el-box-12{
-    height: 110px;
-    width: 110px;
-    margin-left: 3px;
-    margin-top: 3px;
-    border: solid 1px green;
-}
-.el-b-box-12{
-    height: 118px;
-    width: 118px;
-    border: solid 3px green;
+.el-col-red-in{
+    border: solid 1px #ff0303;
 }
