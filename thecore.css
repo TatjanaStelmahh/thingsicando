@@ -1,0 +1,36 @@
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body{
+    min-height: 100%;
+}
+
+body{
+    background-color: white;
+}
+
+.footer{
+    position:fixed;
+    bottom:0;
+    background-color: black;
+    left: 0;
+    right:0;
+    padding: 10px;
+    border-top: solid 3px rgb(44, 4, 37);
+    color:rgb(44, 4, 37);
+        
+}
+
+.mt-3{
+    margin-top: 3px;
+}
+
+.copy-float-r{
+    float: right;
+}
+
+small{
+    font-size: 12px;
+}
