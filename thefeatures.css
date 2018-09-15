@@ -8,8 +8,47 @@ body{
     padding-bottom: 80px;
 }
 
-button{
-    vertical-align: top;
+.middled{
+    margin: 20px auto;
+    max-width: 900px;
+    height: 900px;
+    border: 1px solid white;
+    position: relative;
+    display: grid;
+}
+
+.grid-body{
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: repeat(3, 33.3%);
+    grid-gap: 10px;
+}
+
+.grid-circle-1{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.grid-circle-2{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    align-self: center;
+    justify-self: center;
+
+}
+.grid-circle-3{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.grid-circle-4{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+.grid-circle-5{
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+.grid-circle-6{
+    grid-column-start: 3;
+    grid-row-start: 3;
 }
 
 .circled{
@@ -35,6 +74,13 @@ button{
     align-items: center;
 }
 
+@keyframes wobbly{
+    0% {
+
+    }
+
+}
+
 .el-col-blu{
     color:#13bdb7;
     border-color: #13bdb7;
@@ -44,7 +90,6 @@ button{
     color:#f2118d;
     border-color:  #f2118d;
 }
-
 
 .el-col-grn{
     color:#09f266;
@@ -65,4 +110,6 @@ button{
     color:#333333;
     border-color: #333333;
 }
+
+
 
