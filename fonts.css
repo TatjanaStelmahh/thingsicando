@@ -33,3 +33,13 @@
 :root {
     font-family: 'Montserrat', sans-serif;
 }
+
+button{
+    vertical-align: top;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    background: none;
+    color: black;
+    border-radius: 0;
+}

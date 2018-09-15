@@ -185,8 +185,9 @@ h4{
 }
 
 .name{
-    display: block;
+    
     font-weight: 500px;
     font-size:32px;
     margin:10px;
+    
 }
