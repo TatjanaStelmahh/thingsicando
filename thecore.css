@@ -18,13 +18,24 @@ body{
     right:0;
     padding: 10px;
     border-top: solid 3px rgb(44, 4, 37);
-    color:rgb(44, 4, 37);
+    color:#13bdb7;
     
 }
 
 .f-flex{
     display: flex;
     justify-content: space-between; 
+}
+
+.pre{
+    font-size:12; 
+    opacity:0.3;
+}
+
+a{
+    text-decoration: none;
+    color:#13bdb7;
+    margin-top: 2px;
 }
 
 .grid{
@@ -59,6 +70,7 @@ body{
 
 small{
     font-size: 12px;
+    margin-top:4px;
 }
 
 
@@ -199,10 +211,6 @@ h4{
     margin:24px;
     text-align: center;
     
-}
-
-.shadow{
-    text-shadow: 0 0 4px whitesmoke;
 }
 
 .aside-item{

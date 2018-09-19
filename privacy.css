@@ -48,13 +48,22 @@ body{
     justify-content: space-between; 
 }
 
+
 a{
     text-decoration: none;
-    color: black;
+    color:#13bdb7;
+    margin-top: 2px;
 }
+
+.pre{
+    font-size:12px; 
+    opacity:0.3;
+}
+
 
 small{
     font-size: 12px;
+    margin-top:4px;
 }
 
 .eye-1{
