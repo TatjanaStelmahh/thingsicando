@@ -12,11 +12,14 @@ body{
     padding: 30px;
     margin: 10px, auto;
     color: whitesmoke;
-    background-color : #12100f;
+    background-color : black;
     line-height: 1.8em;
+    border: 25px solid rgb(20, 20, 20);
 }
 
-
+.border-1{
+  border: 25px solid rgb(48, 48, 48);
+}
 
 .page-middle{
     margin-top: 50px;
@@ -38,11 +41,11 @@ body{
     padding: 10px;
     border-top: solid 3px rgb(44, 4, 37);
     color:rgb(44, 4, 37);
-        
 }
 
-.copy-float-r{
-    float: right;
+.f-flex{
+    display: flex;
+    justify-content: space-between; 
 }
 
 a{
@@ -52,10 +55,6 @@ a{
 
 small{
     font-size: 12px;
-}
-
-.mt-3{
-    margin-top: 3px;
 }
 
 .eye-1{
