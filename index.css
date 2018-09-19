@@ -1,0 +1,33 @@
+html, body{
+    min-height: 100%;
+}
+
+body{
+    background-color: black;
+    padding-bottom: 80px;
+}
+
+.footer{
+    position:fixed;
+    bottom:0;
+    background-color: black;
+    left: 0;
+    right:0;
+    padding: 10px;
+    border-top: solid 3px rgb(44, 4, 37);
+    color:#13bdb7;
+}
+
+.f-flex{
+    display: flex;
+    justify-content: space-between; 
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+small{
+    font-size: 12px;
+}

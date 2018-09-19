@@ -19,6 +19,11 @@ body{
     color:rgb(44, 4, 37);
 }
 
+.f-flex{
+    display: flex;
+    justify-content: space-between; 
+}
+
 .copy-float-r{
     float: right;
 }
