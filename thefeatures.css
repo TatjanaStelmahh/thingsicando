@@ -31,7 +31,7 @@ a{
 }
 
 .pre{
-    font-size:12; 
+    font-size:12px; 
     opacity:0.3;
 }
 
@@ -41,10 +41,9 @@ small{
 }
 
 .middled{
-    margin: 20px auto;
-    max-width: 900px;
-    height: 900px;
-    border: 1px solid white;
+    margin: 0px auto;
+    max-width: 800px;
+    height: 700px;
     position: relative;
     display: grid;
 }
@@ -52,7 +51,7 @@ small{
 .grid-body{
     grid-template-columns: repeat(3, 33.3%);
     grid-template-rows: repeat(3, 33.3%);
-    grid-gap: 10px;
+    
 }
 
 .grid-circle-1{
@@ -60,13 +59,16 @@ small{
     grid-row-start: 1;
     align-self: center;
     justify-self: center;
+    margin-top: -10px;
+    margin-left: -20px;
 }
 .grid-circle-2{
     grid-column-start: 1;
     grid-row-start: 2;
     align-self: center;
     justify-self: center;
-
+    margin-top: -10px;
+    margin-left: 0;
 }
 .grid-circle-3{
     grid-column-start: 2;
@@ -79,22 +81,21 @@ small{
     grid-row-start: 2;
     align-self: center;
     justify-self: center;
+    margin-top: 0px;
+    margin-left: -10px;
 }
 .grid-circle-5{
     grid-column-start: 1;
     grid-row-start: 3;
-    align-self: center;
-    justify-self: center;
-    margin-left:  240px;
-    margin-top: -100px;
+    justify-self: right;
+    margin-right: -65px;
+    margin-top: 0px;
 }
 .grid-circle-6{
     grid-column-start: 3;
     grid-row-start: 3;
-    align-self: center;
-    justify-self: center;
-    margin-left: -240px;
-    margin-top: -100px;
+    margin-top:0px; 
+    margin-left:-65px;
 }
 
 .circled{
@@ -106,7 +107,6 @@ small{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .circled-in{
@@ -121,14 +121,77 @@ small{
 }
 
 @keyframes wobbly-1{
-    0% {}
+    25% {
+        margin-left: -10px;
+        margin-top: 10px;
+    }
     50% {
-        margin-top:-95px; 
-        margin-left:-235px;
+        margin-left:0px;
+        margin-top:-10px;
+    }
+    75% {
+        margin-left:10px;
+        margin-top:10px;
     }
     100% {
-        margin-top: -110px;
-        margin-left: -260px;
+        margin-left:20px;
+        margin-top:-10px;
+    }
+}
+
+@keyframes wobbly-2{
+    25% {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    50% {
+        margin-left:-10px;
+        margin-top:0px;
+    }
+    75% {
+        margin-left:10px;
+        margin-top:0px;
+    }
+}
+
+@keyframes wobbly-4{
+    33% {
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    66% {
+        margin-left:0px;
+        margin-top:10px;
+    }
+}
+
+@keyframes wobbly-5{
+    25% {
+        margin-right: -75px;
+        margin-top: 10px;
+    }
+    50% {
+        margin-right:-65px;
+        margin-top:20px;
+    }
+    75% {
+        margin-right: -55px;
+        margin-top: 10px;
+    }
+}
+
+@keyframes wobbly-6{
+    33% {
+        margin-left: -55px;
+        margin-top: 0px;
+    }
+    66% {
+        margin-left:-65px;
+        margin-top:10px;
+    }
+    100% {
+        margin-left: -55px;
+        margin-top: 10px;
     }
 }
 
@@ -136,6 +199,37 @@ small{
     animation-name: wobbly-1;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.anim-wobbly-2{
+    animation-name: wobbly-2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.anim-wobbly-4{
+    animation-name: wobbly-4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.anim-wobbly-5{
+    animation-name: wobbly-5;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.anim-wobbly-6{
+    animation-name: wobbly-6;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
 
 .el-col-blu{

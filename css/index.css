@@ -1,0 +1,34 @@
+body, html {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#textAnimated {
+  display: none; }
+
+#app {
+  font-size: 10rem;
+  animation: elastic 1s ease-in-out infinite;
+  cursor: default; }
+
+.text-item {
+  display: inline-flex; }
+  .text-item > div:hover {
+    transform: scale(2) !important;
+    transition: transform .2s ease-in-out; }
+
+.white {
+  color: white; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.text-lowercase {
+  text-transform: lowercase; }
+
+@keyframes elastic {
+  0%, 100% {
+    letter-spacing: -1.5rem; }
+  50% {
+    letter-spacing: -0.5rem; } }

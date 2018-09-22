@@ -28,7 +28,7 @@ body{
 }
 
 .pre{
-    font-size:12; 
+    font-size:12px; 
     opacity:0.3;
 }
 
@@ -38,11 +38,8 @@ a{
     margin-top: 2px;
 }
 
-.grid{
-    display: grid;
-}
-
 .grid-body{
+    display: grid;
     grid-template-columns: 230px 700px 320px;
     grid-template-rows: 100px auto 100px;
 }
@@ -97,13 +94,31 @@ h1 {
     justify-content: center;
 }
 
-.elements figure{
+figure{
     height: 118px;
     width: 118px;
     margin:5px;
+    position: relative;
+    transition: transform 1s, margin .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    backface-visibility: hidden;
 }
 
-.elements figcaption {
+.flipped {
+    cursor: default;
+    transform: rotateY( 180deg );
+}
+
+figure img {
+    height: 118px;
+    width: 118px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY( 180deg );
+}
+
+figcaption {
     height: 110px;
     width: 110px;
     margin-left: 3px;
@@ -220,6 +235,8 @@ h4{
     border:0;
     margin:16px;
     text-align: center;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 @keyframes pop {
@@ -233,3 +250,5 @@ h4{
     animation-duration: 1s;
     animation-iteration-count: 1;
 }
+
+

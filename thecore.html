@@ -6,138 +6,156 @@
     <title>The Core</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="html5reset-1.6.1.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/hamburgers.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="fonts.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="thecore.css" />
-    <script src="main.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/thecore.js"></script>
 </head>
-<body class="grid grid-body">
+<body class="grid-body">
     <header class="grid-logo">
         <nav>
-            <a href="/" >
-                <picture >
-                    <img src="/images/logo.png" alt="logo">
-                </picture>
-            </a>
+           <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>  
         </nav>
     </header>
+    <menu>
+        <ul>
+            <li>
+                <a href="index.html">The Welcome</a>
+            </li>
+            <li>
+                <a href="thecore.html">The Core</a>
+            </li>
+            <li>
+                <a href="thefeatures.html">The Features</a>
+            </li>
+            <li>
+                <a href="thetouch.html">The Touch</a>
+            </li>
+        </ul>
+    </menu>
     <h1 class="h1 grid-h1">click on the elements of what i can do to unlock the picture puzzle</h1>
-    <p>don't forget to scroll </p>
+    
+            
     <main class="grid-main">
     <div class="elements">
-        <figure class="el-col-blu">
-            <picture>
-                <img src="" alt="">
-            </picture>
+        <figure class="el-col-blu" data-target="css">
+            <img    src="http://www.midwinter-dg.com/blog_demos/animated-image-captions-v2/images/jimi-hendrix.png" alt="">
             <figcaption class="el-col-blu-in">
                 <h4>&#9632&#9632&#9632&#9632&#9632</h4>
                 <h3>CSS</h3>
                 <small > Stylesheets </small>
             </figcaption>
         </figure>
-        <figure class="el-col-blu" >
-            <picture>
-                <img src="" alt="">
-            </picture>
+        <figure class="el-col-blu" data-target="js">
+            
+                <img    src="http://www.midwinter-dg.com/blog_demos/animated-image-captions-v2/images/jimi-hendrix.png" alt="">
+           
             <figcaption class="el-col-blu-in">
                 <h4>&#9632&#9632&#9632</h4>
                 <h3>JS</h3>
                 <small > JavaScript </small>
             </figcaption>
         </figure>
-        <figure class="el-col-blu">
-            <picture>
-                <img src="" alt="">
-            </picture>
+        <figure class="el-col-blu" data-target="html">
+           
+                <img    src="http://www.midwinter-dg.com/blog_demos/animated-image-captions-v2/images/jimi-hendrix.png" alt="">
+            
             <figcaption class="el-col-blu-in" >
                 <h4>&#9632&#9632&#9632&#9632&#9632</h4>
                 <h3>HTML</h3>
                 <small > Markup </small>
             </figcaption>
         </figure>
-        <figure class="el-col-pnk">
-            <picture >
-                <img src="" alt="">
-            </picture>
+        <figure class="el-col-pnk" data-target="sass">
+            
+                <img    src="http://www.midwinter-dg.com/blog_demos/animated-image-captions-v2/images/jimi-hendrix.png" alt="">
+           
             <figcaption class="el-col-pnk-in" >
                 <h4>&#9632&#9632&#9632</h4>
                 <h3>SASS</h3>
                 <small class="el-br"> Awesome <br> Styles </small>
             </figcaption>
         </figure>
-        <figure class="el-col-pnk">
-            <picture >
-                <img src="" alt="">
-            </picture>
+        <figure class="el-col-pnk" data-target="ts">
+           
+                <img    src="http://www.midwinter-dg.com/blog_demos/animated-image-captions-v2/images/jimi-hendrix.png" alt="">
+            
             <figcaption class="el-col-pnk-in">
                 <h4>&#9632&#9632&#9632</h4>
                 <h3>TS</h3>
                 <small> TypeScript </small>
             </figcaption>
         </figure>
-        <figure class="el-col-grn">
-            <picture>
-                <img src="" alt="">
-            </picture>
+        <figure class="el-col-grn" data-target="jq">
+           
+                <img    src="http://www.midwinter-dg.com/blog_demos/animated-image-captions-v2/images/jimi-hendrix.png" alt="">
+            
             <figcaption class="el-col-grn-in">
                 <h4>&#9632&#9632&#9632</h4>
                 <h3>JQ</h3>
                 <small > JQuery </small>
             </figcaption>
         </figure>
-        <figure  class="el-col-red">
-            <picture>
-                <img src="" alt="">
-            </picture>
+        <figure  class="el-col-red" data-target="design">
+            
+                <img    src="http://www.midwinter-dg.com/blog_demos/animated-image-captions-v2/images/jimi-hendrix.png" alt="">
+            
             <figcaption  class="el-col-red-in">
                 <h4>&#9632&#9632&#9632&#9632&#9632</h4>
                 <h3>D</h3>
                 <small > Design </small>
             </figcaption>
         </figure>
-        <figure class="el-col-ylw">
-            <picture>
-                <img src="" alt="">
-            </picture>
+        <figure class="el-col-ylw" data-target="rd">
+            
+               <img    src="http://www.midwinter-dg.com/blog_demos/animated-image-captions-v2/images/jimi-hendrix.png" alt="">
+            
             <figcaption class="el-col-ylw-in">
                 <h4>&#9632&#9632&#9632&#9632</h4>
                 <h3>RD</h3>
                 <small class="el-br"> Responsive <br> Design </small>
             </figcaption>
         </figure>
-        <figure class="el-col-grn">
-            <picture>
-                <img src="" alt="">
-            </picture>
+        <figure class="el-col-grn" data-target="bs">
+           
+                <img    src="http://www.midwinter-dg.com/blog_demos/animated-image-captions-v2/images/jimi-hendrix.png" alt="">
+            
             <figcaption class="el-col-grn-in">
                 <h4>&#9632&#9632&#9632</h4>
                 <h3>BS</h3>
                 <small> Bootstrap </small>
             </figcaption>
         </figure>
-        <figure class="el-col-red">
-            <picture>
-                <img src="" alt="">
-            </picture>
+        <figure class="el-col-red" data-target="ps">
+            
+                <img    src="http://www.midwinter-dg.com/blog_demos/animated-image-captions-v2/images/jimi-hendrix.png" alt="">
+            
             <figcaption class="el-col-red-in">
                 <h4>&#9632&#9632&#9632&#9632&#9632</h4>
                 <h3>PS</h3>
                 <small > Photoshop </small>
             </figcaption>
         </figure>
-        <figure class="el-col-ylw">
-            <picture>
-                <img src="" alt="">
-            </picture>
+        <figure class="el-col-ylw" data-target="seo">
+            
+                <img    src="http://www.midwinter-dg.com/blog_demos/animated-image-captions-v2/images/jimi-hendrix.png" alt="">
+            
             <figcaption class="el-col-ylw-in">
                 <h4>&#9632&#9632&#9632</h4>
                 <h3>SEO</h3>
                 <small> Optimization </small>
             </figcaption>
         </figure>
-        <figure class="el-col-grn">
-            <picture>
-                <img src="" alt="">
-            </picture>
+        <figure class="el-col-grn" data-target="git">
+            
+                <img    src="http://www.midwinter-dg.com/blog_demos/animated-image-captions-v2/images/jimi-hendrix.png" alt="">
+            
             <figcaption class="el-col-grn-in">
                 <h4>&#9632&#9632</h4>
                 <h3>GIT</h3>
@@ -150,18 +168,18 @@
 
     <aside class="aside-grid">
         <div class="unlocked">&#9784   UNLOCKED</div>
-        <p class="aside-item el-col-grn anim-pop">Git</p>
-        <p class="aside-item el-col-blu anim-pop">Css</p>
-        <p class="aside-item el-col-pnk anim-pop">Sass</p>
-        <p class="aside-item el-col-blu anim-pop">HTML</p>
-        <p class="aside-item el-col-red anim-pop">Design</p>
-        <p class="aside-item el-col-grn anim-pop">JQuery</p>
-        <p class="aside-item el-col-grn anim-pop">Bootstrap</p>
-        <p class="aside-item el-col-blu anim-pop">Javascript</p>
-        <p class="aside-item el-col-pnk anim-pop">Typescript</p>
-        <p class="aside-item el-col-red anim-pop">Photoshop</p>
-        <p class="aside-item el-col-ylw anim-pop">Optimization</p>
-        <p class="aside-item el-col-ylw anim-pop">Responsive Design</p>
+        <p class="aside-item el-col-grn aside-git">Git</p>
+        <p class="aside-item el-col-blu aside-css">Css</p>
+        <p class="aside-item el-col-pnk aside-sass">Sass</p>
+        <p class="aside-item el-col-blu aside-html">HTML</p>
+        <p class="aside-item el-col-red aside-design">Design</p>
+        <p class="aside-item el-col-grn aside-jq">JQuery</p>
+        <p class="aside-item el-col-grn aside-bs">Bootstrap</p>
+        <p class="aside-item el-col-blu aside-js">Javascript</p>
+        <p class="aside-item el-col-pnk aside-ts">Typescript</p>
+        <p class="aside-item el-col-red aside-ps">Photoshop</p>
+        <p class="aside-item el-col-ylw aside-seo">Optimization</p>
+        <p class="aside-item el-col-ylw aside-rd">Responsive Design</p>
         
        
 
