@@ -7,17 +7,6 @@ body{
     padding-bottom: 80px;
 }
 
-.footer{
-    position:fixed;
-    bottom:0;
-    background-color: black;
-    left: 0;
-    right:0;
-    padding: 10px;
-    border-top: solid 3px rgb(44, 4, 37);
-    color:#13bdb7;
-}
-
 .f-flex{
     display: flex;
     justify-content: space-between; 

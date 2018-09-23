@@ -41,6 +41,11 @@
 
 :root {
     font-family: 'Montserrat', sans-serif;
+    --blue: #13bdb7;
+    --pink: #f2118d;
+    --green: #09f266;
+    --yellow: #e5fa00;
+    --red: #ff0303;
 }
 
 button{
@@ -93,3 +98,17 @@ menu a {
 menu a:hover {
     color: yellow;
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    border-top: solid 3px rgb(44, 4, 37);
+    color: #13bdb7;
+    z-index: 300;
+}
+
+

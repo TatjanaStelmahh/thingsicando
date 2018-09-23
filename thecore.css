@@ -1,73 +1,61 @@
-
-html, body{
+html,
+body {
     min-height: 100%;
 }
 
-body{
+body {
     background-color: black;
     color: whitesmoke;
     padding-bottom: 80px;
-    
 }
 
-.footer{
-    position:fixed;
-    bottom:0;
-    background-color: black;
-    left: 0;
-    right:0;
-    padding: 10px;
-    border-top: solid 3px rgb(44, 4, 37);
-    color:#13bdb7;
-    
-}
-
-.f-flex{
+.f-flex {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
-.pre{
-    font-size:12px; 
-    opacity:0.3;
+.pre {
+    font-size: 12px;
+    opacity: 0.3;
 }
 
-a{
+a {
     text-decoration: none;
-    color:#13bdb7;
+    color: #13bdb7;
     margin-top: 2px;
 }
 
-.grid-body{
+.grid-body {
     display: grid;
     grid-template-columns: 230px 700px 320px;
     grid-template-rows: 100px auto 100px;
 }
-.grid-logo{
+
+.grid-logo {
     grid-column-start: 1;
     grid-row-start: 1;
 }
 
-.grid-h1{
+.grid-h1 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
 }
 
-.grid-main{
+.grid-main {
     grid-column-start: 2;
-    grid-row-start:2;
-}
-
-.aside-grid{
-    grid-column-start: 3;
     grid-row-start: 2;
 }
 
+.aside-grid {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    text-align: center;
+}
 
-small{
+small {
     font-size: 12px;
-    margin-top:4px;
+    margin-top: 4px;
 }
 
 
@@ -86,7 +74,7 @@ h1 {
     
 }*/
 
-.elements{
+.elements {
     display: flex;
     max-width: 420px;
     flex-wrap: wrap;
@@ -94,12 +82,12 @@ h1 {
     justify-content: center;
 }
 
-figure{
+figure {
     height: 118px;
     width: 118px;
-    margin:5px;
+    margin: 5px;
     position: relative;
-    transition: transform 1s, margin .5s;
+    transition: transform 1s, margin 1s;
     transform-style: preserve-3d;
     cursor: pointer;
     backface-visibility: hidden;
@@ -107,15 +95,64 @@ figure{
 
 .flipped {
     cursor: default;
-    transform: rotateY( 180deg );
+    transform: rotateY( 180deg);
+    border: 0 !important;
+    width: 124px;
+    height: 124px;
 }
 
-figure img {
-    height: 118px;
-    width: 118px;
+.sprite {
+    height: 124px;
+    width: 124px;
     position: absolute;
     backface-visibility: hidden;
-    transform: rotateY( 180deg );
+    transform: rotateY( 180deg);
+    background-image: url('images/sprite.jpg');
+    background-position: 0 0;
+}
+
+figure:nth-child(2) .sprite{
+    background-position: -124px 0;
+}
+
+figure:nth-child(3) .sprite{
+    background-position: -248px 0;
+}
+
+figure:nth-child(4) .sprite{
+    background-position: 0 -124px;
+}
+
+figure:nth-child(5) .sprite{
+    background-position: -124px -124px;
+}
+
+figure:nth-child(6) .sprite{
+    background-position: -248px -124px;
+}
+
+figure:nth-child(7) .sprite{
+    background-position: 0 -248px;
+}
+
+figure:nth-child(8) .sprite{
+    background-position: -124px -248px;
+}
+
+figure:nth-child(9) .sprite{
+    background-position: -248px -248px;
+}
+
+figure:nth-child(10) .sprite{
+    background-position: 0 -372px;
+}
+
+figure:nth-child(11) .sprite{
+    background-position: -124px -372px;
+}
+
+figure:nth-child(12) .sprite{
+    background-position: -248px -372px;
 }
 
 figcaption {
@@ -123,85 +160,91 @@ figcaption {
     width: 110px;
     margin-left: 3px;
     margin-top: 3px;
-   
 }
 
-.al-r{
+.al-r {
     text-align: right;
 }
 
-h1{
+h1 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     font-weight: 500;
+    color: #13bdb7;
+    opacity: 0.5;
 }
 
-h3{
+h3 {
     text-align: right;
     font-size: 32px;
     margin-top: 20px;
     margin-right: 4px;
 }
 
-h4{
+h4 {
     margin-top: -2px;
     margin-left: 2px;
     padding-bottom: 5px;
 }
 
-.elements figure small{
+.elements figure small {
     display: block;
     text-align: right;
     margin-right: 4px;
     margin-top: 22px;
 }
 
-.elements figure .el-br{
-   margin-top: 10px;
+.elements figure .el-br {
+    margin-top: 10px;
 }
 
-.el-col-blu{
-    color:#13bdb7;
+.el-col-blu {
+    color: #13bdb7;
     border: solid 3px #13bdb7;
 }
-.el-col-blu-in{
+
+.el-col-blu-in {
     border: solid 1px #13bdb7;
 }
 
-.el-col-pnk{
-    color:#f2118d;
+.el-col-pnk {
+    color: #f2118d;
     border: solid 3px #f2118d;
 }
-.el-col-pnk-in{
+
+.el-col-pnk-in {
     border: solid 1px #f2118d;
 }
 
-.el-col-grn{
-    color:#09f266;
+.el-col-grn {
+    color: #09f266;
     border: solid 3px #09f266;
 }
-.el-col-grn-in{
+
+.el-col-grn-in {
     border: solid 1px #09f266;
 }
 
-.el-col-ylw{
-    color:#e5fa00;
+.el-col-ylw {
+    color: #e5fa00;
     border: solid 3px #e5fa00;
 }
-.el-col-ylw-in{
+
+.el-col-ylw-in {
     border: solid 1px #e5fa00;
 }
 
-.el-col-red{
-    color:#ff0303;
+.el-col-red {
+    color: #ff0303;
     border: solid 3px #ff0303;
 }
-.el-col-red-in{
+
+.el-col-red-in {
     border: solid 1px #ff0303;
 }
 
-.unlocked{
+.unlocked {
     display: inline-block;
     border-radius: 30px;
     padding: 10px;
@@ -210,45 +253,66 @@ h4{
     border: 3px solid pink;
     text-decoration: none;
     width: 200px;
-    text-align: center;
     margin-top: 10px;
-    margin-left: 44px;
+    
 }
 
-.mt-30{
+.continue {
+    pointer-events: none;
+    opacity: 0.2;
+    transition: opacity 1s;
+}
+
+.mt-30 {
     margin-top: 40px;
 }
 
-.name{
-    
+.name {
     font-weight: 700;
-    font-size:32px;
-    margin:24px;
+    font-size: 32px;
+    margin: 24px;
     text-align: center;
-    
+    opacity: 0;
+    transition: opacity 1s;
 }
 
-.aside-item{
+.visible {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.aside-item {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 500;
-    border:0;
-    margin:16px;
+    border: 0;
+    margin: 16px;
     text-align: center;
     opacity: 0;
     animation-fill-mode: forwards;
 }
 
 @keyframes pop {
-    0% { opacity: 0; transform: scale(0.5) }
-    80% {opacity: 1; transform:scale(1.1)}
-    100% { opacity: 1; transform: scale(1) }
+    0% {
+        opacity: 0;
+        transform: scale(0.5)
+    }
+    80% {
+        opacity: 1;
+        transform: scale(1.1)
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
 }
 
-.anim-pop{
+.anim-pop {
     animation-name: pop;
     animation-duration: 1s;
     animation-iteration-count: 1;
 }
 
+@media(max-width: 768px){
 
+}

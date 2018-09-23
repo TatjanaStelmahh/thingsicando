@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +11,20 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/hamburgers.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="thefeatures.css" />
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/vivus.min.js"></script>
     <script src="js/global.js"></script>
+    <script src="js/thefeatures.js"></script>
 </head>
+
 <body>
     <header class="grid-logo">
         <nav>
-           <button class="hamburger hamburger--spin" type="button">
+            <button class="hamburger hamburger--spin" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
-            </button>  
+            </button>
         </nav>
     </header>
     <menu>
@@ -39,51 +44,77 @@
         </ul>
     </menu>
 
+<div class="window-center">
     <main class="middled grid-body">
-        <button class="circled el-col-blu grid-circle-1 anim-wobbly-1">
+        <div class="circled el-col-blu grid-circle-1 anim-wobbly-1 draggable" data-topic="css">
             <div class="circled-in el-col-blu">
-                <p>CSS</p> 
+                <p>CSS</p>
             </div>
-        </button>
-        <button class="circled el-col-grn grid-circle-2 anim-wobbly-2">
+        </div>
+        <div class="circled el-col-grn grid-circle-2 anim-wobbly-2 draggable" data-topic="js">
             <div class="circled-in el-col-grn">
                 <p> JS </p>
             </div>
-        </button> 
-        <button class="circled el-col-gry grid-circle-3 anim-wobbly-3">
-                <p> PUT HERE </p>
-        </button> 
-        <button class="circled el-col-pnk grid-circle-4 anim-wobbly-4">
+        </div>
+        <div class="circled el-col-gry grid-circle-3 anim-wobbly-3 droppable">
+            <p> PUT HERE </p>
+        </div>
+        <div class="circled el-col-pnk grid-circle-4 anim-wobbly-4 draggable" data-topic="soft-skills">
             <div class="circled-in el-col-pnk">
                 <p> Soft Skills </p>
             </div>
-        </button>
-        <button class="circled el-col-ylw grid-circle-5 anim-wobbly-5">
+        </div>
+        <div class="circled el-col-ylw grid-circle-5 anim-wobbly-5 draggable" data-topic="interests">
             <div class="circled-in el-col-ylw">
                 <p> Interests </p>
             </div>
-        </button>
-        <button class="circled el-col-red grid-circle-6 anim-wobbly-6">
+        </div>
+        <div class="circled el-col-red grid-circle-6 anim-wobbly-6 draggable" data-topic="experience">
             <div class="circled-in el-col-red">
-                <p> Previous </p>
+                <p> Experience </p>
             </div>
-        </button> <br>
+        </div> <br>
         <a href="thetouch.html"> <button> <img src="" alt=""> Final Touch </button></a>
     </main>
+</div>
 
     <footer class="footer">
         <nav class="f-flex">
             <a href="privacy.html">Privacy</a>
-<pre class="pre">
+            <pre class="pre">
 #master-yoda{ color: green;
         text-direction: random;}
 </pre>
-<pre class="pre">
+            <pre class="pre">
 #moses > .sea{ 
         column-count: 2;}
 </pre>
-            <small>Tatjana Stelmahh &copy; 2018</small>
+        <a href="mailto:Tatjana Stelmahh <tatjana.stelmahh@gmail.com>"><small>Tatjana Stelmahh &copy; 
+        2018</small></a>   
         </nav>
-    </footer> 
+    </footer>
+
+    <div class="overlay overlay-css">
+        <button class="close"></button>
+        <p class="point-1">something, something</p>
+        <object id="svg-css" type="image/svg+xml" data="svg/blue.svg"></object>
+    </div>
+    <div class="overlay overlay-js">
+        <button class="close"></button>
+        <object id="svg-js" type="image/svg+xml" data="svg/green.svg"></object>
+    </div>
+    <div class="overlay overlay-soft-skills">
+        <button class="close"></button>
+        <object id="svg-soft-skills" type="image/svg+xml" data="svg/pink.svg"></object>
+    </div>
+    <div class="overlay overlay-interests">
+        <button class="close"></button>
+        <object id="svg-interests" type="image/svg+xml" data="svg/yellow.svg"></object>
+    </div>
+    <div class="overlay overlay-experience">
+        <button class="close"></button>
+        <object id="svg-experience" type="image/svg+xml" data="svg/red.svg"></object>
+    </div>
 </body>
+
 </html>
