@@ -5,7 +5,7 @@ body {
 
 body {
     background-color: black;
-    color: whitesmoke;
+    color: var(--blue);
     padding-bottom: 80px;
 }
 
@@ -31,10 +31,7 @@ a {
     grid-template-rows: 100px auto 100px;
 }
 
-.grid-logo {
-    grid-column-start: 1;
-    grid-row-start: 1;
-}
+
 
 .grid-h1 {
     grid-column-start: 2;
@@ -246,26 +243,44 @@ h4 {
 
 .unlocked {
     display: inline-block;
-    border-radius: 30px;
     padding: 10px;
-    background-color: rgb(44, 4, 37);
-    color: whitesmoke;
-    border: 3px solid pink;
+    background-color: black;
+    color: var(--blue);
     text-decoration: none;
     width: 200px;
     margin-top: 10px;
+    border:0;
+    border-top: 1px solid var(--blue);
+    border-bottom: 1px solid var(--blue);
     
 }
 
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+}
+
 .continue {
+    display: inline-block;
+    padding: 10px;
+    background-color: black;
+    color: var(--blue);
+    text-decoration: none;
+    margin-top: 115px;
+    width: 200px;
+    border: 2px solid var(--blue);
     pointer-events: none;
     opacity: 0.2;
     transition: opacity 1s;
 }
 
-.mt-30 {
-    margin-top: 40px;
+.continue:hover {
+    box-shadow: 12px 12px 16px 12px var(--pink), 17px 17px 50px 17px var(--pink);
 }
+
+
 
 .name {
     font-weight: 700;
