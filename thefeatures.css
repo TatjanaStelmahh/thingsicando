@@ -1,12 +1,4 @@
-html,
-body {
-    min-height: 100%;
-}
 
-body {
-    background-color: black;
-    padding-bottom: 80px;
-}
 
 .window-center{
     display: flex;
@@ -15,10 +7,6 @@ body {
 
 }
 
-.f-flex {
-    display: flex;
-    justify-content: space-between;
-}
 
 a {
     text-decoration: none;
@@ -132,6 +120,34 @@ small {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.texts{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.final-touch {
+    display: inline-block;
+    padding: 10px;
+    background-color: black;
+    color: var(--blue);
+    width: 150px;
+    border: 2px solid var(--blue);
+    pointer-events: none;
+    opacity: 0.2;
+    transition: opacity 1s, box-shadow 0.3s;
+    text-align: center;
+    box-shadow: 0 0 0 0 var(--pink);
+    position: absolute;
+    right: 15px;
+    margin-top: 45px;
+    top:0;
+}
+
+
+.final-touch:hover {
+    box-shadow: 0px 0px 40px 10px var(--pink);
 }
 
 @keyframes wobbly-1 {
@@ -301,12 +317,12 @@ small {
 
 .close{
     position: absolute;
-    border: 1px solid white;
-    width: 80px;
-    height: 50px;
-    margin-top: 60px;
-    margin-left: 20px;
+    width: 90px;
+    height: 60px;
+    margin-top: 80px;
+    margin-left: 0;
     cursor: pointer;
+    
 }
 
 .overlay p, .overlay a {
@@ -326,5 +342,41 @@ small {
 .overlay #svg-js{
     width: 540px;
     margin-top: -70px;
+}
+
+@media(max-width: 768px){
+    .window-center{
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+
+    .grid-body{
+        display: inline-block;
+        height:730px;
+        width:auto;
+        margin-top: 120px; 
+    }
+    .el-col-gry{
+        display: none;
+    }
+
+    .final-touch{
+        position: static;
+
+    }
+
+    body{
+        text-align: center;
+    }
+
+    .overlay{
+        height: 100%;
+    }
+
+    object{
+        display: none;
+    }
+
 }
 

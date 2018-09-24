@@ -21,12 +21,27 @@ $(function() {
             {top: '61%', left: 0, width: '100vw', height: 10, color: pink, hidden: true, animation: { duration: 1000, easing: 'easeOutSine', delay: 600, direction: 'LeftRight' }},
             {top: '70%', left: 0, width: '100vw', height: 3, color: pink, hidden: true, animation: { duration: 1000, easing: 'easeOutSine', delay: 400, direction: 'LeftRight' }},
             {top: '80%', left: 0, width: '100vw', height: 8, color: pink, hidden: true, animation: { duration: 1000, easing: 'easeOutSine', delay: 300, direction: 'LeftRight' }},
-          
         ]
     });
     
     setTimeout(function() {
         lineMaker.animateLinesIn();
     }, 250);
-	
+    
+    // Ankeedi saatmine
+    $("#form").submit(function(event) {
+        event.preventDefault();
+        var serializedData = $("#form").serialize();
+
+        $.ajax({
+            type: "POST",
+            url: "../php/form.php",
+            data: serializedData,
+            success: function(data) {
+                if (data === 'success') {
+                    $('.success').addClass('visible');
+                }
+            }
+        });
+    });
 });

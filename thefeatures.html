@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="grid-logo">
+    <header>
         <nav>
             <button class="hamburger hamburger--spin" type="button">
                 <span class="hamburger-box">
@@ -30,7 +30,7 @@
     <menu>
         <ul>
             <li>
-                <a href="index.html">The Welcome</a>
+                <a href="/">The Welcome</a>
             </li>
             <li>
                 <a href="thecore.html">The Core</a>
@@ -43,41 +43,41 @@
             </li>
         </ul>
     </menu>
+    
 
 <div class="window-center">
     <main class="middled grid-body">
         <div class="circled el-col-blu grid-circle-1 anim-wobbly-1 draggable" data-topic="css">
             <div class="circled-in el-col-blu">
-                <p>CSS</p>
+                <p class="texts">CSS <br> things</p>
             </div>
         </div>
         <div class="circled el-col-grn grid-circle-2 anim-wobbly-2 draggable" data-topic="js">
             <div class="circled-in el-col-grn">
-                <p> JS </p>
+                <p class="texts"> JS <br> things </p>
             </div>
         </div>
         <div class="circled el-col-gry grid-circle-3 anim-wobbly-3 droppable">
-            <p> PUT HERE </p>
+            <p class="texts"> put here </p>
         </div>
         <div class="circled el-col-pnk grid-circle-4 anim-wobbly-4 draggable" data-topic="soft-skills">
             <div class="circled-in el-col-pnk">
-                <p> Soft Skills </p>
+                <p class="texts"> soft skills </p>
             </div>
         </div>
         <div class="circled el-col-ylw grid-circle-5 anim-wobbly-5 draggable" data-topic="interests">
             <div class="circled-in el-col-ylw">
-                <p> Interests </p>
+                <p class="texts"> interests </p>
             </div>
         </div>
         <div class="circled el-col-red grid-circle-6 anim-wobbly-6 draggable" data-topic="experience">
             <div class="circled-in el-col-red">
-                <p> Experience </p>
+                <p class="texts"> experience </p>
             </div>
-        </div> <br>
-        <a href="thetouch.html"> <button> <img src="" alt=""> Final Touch </button></a>
+        </div> 
     </main>
 </div>
-
+<a href="thetouch.html" class="final-touch"> Final Touch </a>
     <footer class="footer">
         <nav class="f-flex">
             <a href="privacy.html">Privacy</a>
@@ -115,6 +115,16 @@
         <button class="close"></button>
         <object id="svg-experience" type="image/svg+xml" data="svg/red.svg"></object>
     </div>
-</body>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126188787-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-126188787-1');
+</script>
+
+</body>
 </html>

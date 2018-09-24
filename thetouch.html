@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>The Touch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
     <link rel="stylesheet" type="text/css" media="screen" href="html5reset-1.6.1.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="fonts.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/hamburgers.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="fonts.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="thetouch.css" />
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/global.js"></script>
@@ -29,7 +30,7 @@
     <menu>
         <ul>
             <li>
-                <a href="index.html">The Welcome</a>
+                <a href="/">The Welcome</a>
             </li>
             <li>
                 <a href="thecore.html">The Core</a>
@@ -43,18 +44,23 @@
         </ul>
     </menu>
     <main>
-        <form>
+        <form id="form">
         <h1>Let me know if You would want<br> a front-end developer<br> like me</h1>
             <fieldset class="middled">
-                <label for="name">your full name</label> <br>
-                <input class="inputs" type="text" autofocus maxlength="128" required name="fullName" id="name"> <br>
-                <label for="email">your e-mail</label> <br>
-                <input class="inputs" type=email required name="email" id="email" > <br>
-                <label for="profession"> your profession</label> <br>
-                <input class="inputs" type="text" required name="profession" id="profession"> <br>
-                <label for="message">your message and ideas</label> <br>
-                <textarea class="inputs textarea" required name="message" rows="4" cols="35"></textarea> <br>
+                <label for="name">your full name</label>
+                <input class="inputs" type="text" autofocus maxlength="128" required name="name" id="name">
+
+                <label for="email">your e-mail</label> 
+                <input class="inputs" type="email" required name="email" id="email" >
+
+                <label for="profession"> your profession</label> 
+                <input class="inputs" type="text" required name="profession" id="profession">
+
+                <label for="message">your message and ideas</label> 
+                <textarea class="inputs textarea" required name="message" rows="4" cols="35"></textarea>
+
                 <button class="unlocked" type="submit">send</button>
+                <h2 class="success">Message sent</h2>
             </fieldset>
         </form>
     </main>
@@ -73,5 +79,16 @@
         2018</small></a>
             </nav>
     </footer>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126188787-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-126188787-1');
+</script>
+
 </body>
 </html>

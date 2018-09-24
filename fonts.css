@@ -5,6 +5,62 @@
     font-weight: 400;
 }
 
+@font-face{
+    font-family: 'Xefora';
+    src: url('fonts/Xefora.ttf'); 
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Harry';
+    src: url('fonts/Harry.TTF'); 
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'dum1';
+    src: url('fonts/dum1.ttf'); 
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'dum1ital';
+    src: url('fonts/dum1ital.ttf'); 
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'dum1out';
+    src: url('fonts/dum1out.ttf'); 
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'dum1shad';
+    src: url('fonts/dum1shad.ttf'); 
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'dum1thin';
+    src: url('fonts/dum1shad.ttf'); 
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face{
+    font-family: 'dum1wide';
+    src: url('fonts/dum1wide.ttf'); 
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face{
+    font-family: 'dum13d';
+    src: url('fonts/dum13d.ttf'); 
+    font-style: normal;
+    font-weight: 800;
+}
+
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
@@ -48,6 +104,18 @@
     --red: #ff0303;
 }
 
+html, body{
+    min-height: 100%;
+  
+}
+
+body{
+    
+    background-color: black;
+    padding-bottom: 80px;
+    font-size: 14px;
+}
+
 button{
     vertical-align: top;
     padding: 0;
@@ -56,6 +124,22 @@ button{
     background: none;
     color: black;
     border-radius: 0;
+}
+
+a{
+    text-decoration: none;
+    color:#13bdb7;
+    margin-top: 2px;
+}
+
+.pre{
+    font-size:12; 
+    opacity:0.3;
+}
+
+small{
+    font-size: 12px;
+    margin-top: 4px;
 }
 
 a:link {
@@ -70,20 +154,20 @@ header {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 
 menu {
     position: absolute;
     top: 90px;
-    left: 0;
+    left: -200px;
     z-index: 100;
     width: 200px;
-    margin-left: -200px;
-    transition: margin 1s;
+    transition: left 1s;
 }
 
 menu.visible {
-    margin-left: 0;
+    left: 0;
 }
 
 menu ul {
@@ -109,6 +193,59 @@ menu a:hover {
     border-top: solid 3px rgb(44, 4, 37);
     color: #13bdb7;
     z-index: 300;
+}
+
+.f-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 768px){
+
+    .footer{
+        position: static;
+        margin-top: 30px;
+    }
+
+    .f-flex{
+        display: block;
+        text-align: center;
+    }
+
+    .f-flex > * {
+        padding: 20px;
+    }
+
+    html, body {
+        padding-bottom: 0;
+    }
+
+    menu{
+        width: 100%;
+        background: black;
+        top: 0;
+        padding-top: 90px;
+        padding-bottom: 50px;
+        z-index: 99;
+        left: -100%;
+        text-align: center;
+    }
+
+    menu a {
+        padding:30px 15px;
+    }
+
+    .hamburger{
+        margin-top: 5px;
+    }
+
+    header{
+        width: 100%;
+        text-align: center;
+    }
+
+
+
 }
 
 

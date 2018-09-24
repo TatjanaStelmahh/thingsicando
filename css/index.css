@@ -1,8 +1,16 @@
-body, html {
+body {
   height: 100%;
   display: flex;
+  text-align: center;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  color: var(--blue); }
+
+html {
+  height: 100%; }
+
+h1 {
+  text-align: center; }
 
 #textAnimated {
   display: none; }
@@ -32,3 +40,10 @@ body, html {
     letter-spacing: -1.5rem; }
   50% {
     letter-spacing: -0.5rem; } }
+
+@media (max-width: 768px) {
+  body {
+    display: block; }
+  #app {
+    font-size: 60px;
+    margin-top: 150px; } }
