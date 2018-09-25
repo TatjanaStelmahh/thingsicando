@@ -243,7 +243,11 @@ menu a:hover {
         width: 100%;
         text-align: center;
     }
-
+    
+    .mob{
+        display: block;
+        margin-top: 0;
+    }
 
 
 }

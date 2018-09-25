@@ -99,7 +99,7 @@ figure {
     position: absolute;
     backface-visibility: hidden;
     transform: rotateY( 180deg);
-    background-image: url('images/sprite.jpg');
+    background-image: url('images/tatjana_stelmahh.jpg');
     background-position: 0 0;
 }
 
@@ -265,7 +265,7 @@ h4 {
     background-color: black;
     color: var(--blue);
     text-decoration: none;
-    margin-top: 115px;
+    margin-top: 81px;
     width: 200px;
     border: 2px solid var(--blue);
     pointer-events: none;

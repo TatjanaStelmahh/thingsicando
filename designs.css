@@ -1,0 +1,13 @@
+.masonry-elem {
+    width: 33.333333%;
+    float: left;
+}
+
+.masonry-elem-big {
+    width: 66.66666%;
+}
+
+.masonry-elem img {
+    display: block;
+    max-width: 100%;
+}

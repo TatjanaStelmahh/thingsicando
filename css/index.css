@@ -10,7 +10,33 @@ html {
   height: 100%; }
 
 h1 {
-  text-align: center; }
+  text-align: center;
+  font-size: 32px;
+  margin-top: 40px; }
+
+.triangle {
+  font-size: 45px;
+  color: var(--blue);
+  text-shadow: 0 0 10px var(--blue); }
+
+.triangle:hover {
+  text-shadow: 0 0 30px var(--green); }
+
+.t-cover {
+  height: 80px; }
+
+@keyframes triangle {
+  0% {
+    padding-top: 0px; }
+  100% {
+    padding-top: 20px; } }
+
+.triangle-anim {
+  animation-name: triangle;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in; }
 
 #textAnimated {
   display: none; }
@@ -18,7 +44,10 @@ h1 {
 #app {
   font-size: 10rem;
   animation: elastic 1s ease-in-out infinite;
-  cursor: default; }
+  text-shadow: 0 0 40px var(--blue); }
+
+#app:hover {
+  text-shadow: 0 0 40px var(--green); }
 
 .text-item {
   display: inline-flex; }
@@ -46,4 +75,7 @@ h1 {
     display: block; }
   #app {
     font-size: 60px;
-    margin-top: 150px; } }
+    margin-top: 150px; }
+  h1 {
+    margin-left: 10px;
+    margin-right: 10px; } }

@@ -33,6 +33,10 @@ $(function() {
             new Vivus('svg-' + topic, {
                 duration: 100
             });
+
+            $('html,body').animate({
+                scrollTop: 0
+            }, 500 ); 
         }, 400);
         
         setTimeout(function() {

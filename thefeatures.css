@@ -19,10 +19,6 @@ a {
     opacity: 0.3;
 }
 
-small {
-    font-size: 12px;
-    margin-top: 4px;
-}
 
 .middled {
     margin: 0px auto;
@@ -40,6 +36,28 @@ small {
 
 .draggable {
     cursor: pointer;
+}
+
+figure{
+    color: var(--red);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.overlay-css figure{
+    color: var(--blue);
+}
+.overlay-js figure{
+    color: var(--green);
+}
+.overlay-soft-skills figure{
+    color: var(--pink);
+}
+.overlay-interests figure{
+    color: var(--yellow);
+}
+.overlay-experience figure{
+    color: var(--red);
 }
 
 .circled.collapse {
@@ -135,7 +153,7 @@ small {
     width: 150px;
     border: 2px solid var(--blue);
     pointer-events: none;
-    opacity: 0.2;
+    opacity: 0.3;
     transition: opacity 1s, box-shadow 0.3s;
     text-align: center;
     box-shadow: 0 0 0 0 var(--pink);
@@ -319,14 +337,13 @@ small {
     position: absolute;
     width: 90px;
     height: 60px;
-    margin-top: 80px;
-    margin-left: 0;
+    top: 14px;
+    right: 0px;
     cursor: pointer;
-    
-}
-
-.overlay p, .overlay a {
-    position: absolute;
+    background-image: url("/svg/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% 60%;
 }
 
 .visible {
@@ -342,6 +359,171 @@ small {
 .overlay #svg-js{
     width: 540px;
     margin-top: -70px;
+}
+
+figure h2 {
+    font-size: 24px;
+}
+
+/*CSS*/
+
+.overlay-css figure:nth-child(1){
+    margin-top: -190px;
+    margin-left: -203px;
+}
+
+.overlay-css figure:nth-child(2){
+    margin-top: 24px;
+    margin-left: -300px;
+}
+
+.overlay-css figure:nth-child(3){
+    margin-top: -130px;
+    margin-left: 195px;
+}
+
+.overlay-css figure:nth-child(4){
+    margin-top: 72px;
+    margin-left: 170px;
+}
+
+/* JS */
+
+.overlay-js figure:nth-child(1){
+    margin-top: -229px;
+    margin-left: -31px;
+}
+
+.overlay-js figure:nth-child(2){
+    margin-top: 71px;
+    margin-left: -380px;
+}
+
+.overlay-js figure:nth-child(3){
+    margin-top: 60px;
+    margin-left: 280px;
+}
+
+
+/*Soft-skills*/
+
+.overlay-soft-skills figure:nth-child(1){
+    margin-top: -183px;
+    margin-left: -8px;
+}
+
+.overlay-soft-skills figure:nth-child(2){
+    margin-top: -122px;
+    margin-left: -315px;
+}
+
+.overlay-soft-skills figure:nth-child(3){
+    margin-top: -100px;
+    margin-left: 195px;
+}
+
+.overlay-soft-skills figure:nth-child(4){
+    margin-top: -77px;
+    margin-left: -289px;
+}
+
+.overlay-soft-skills figure:nth-child(5){
+    margin-top: -41px;
+    margin-left: 184px;
+}
+
+
+.overlay-soft-skills figure:nth-child(6){
+    margin-top: -20px;
+    margin-left: -287px;
+}
+
+.overlay-soft-skills figure:nth-child(7){
+    margin-top: 0px;
+    margin-left: 123px;
+}
+
+ /*Interests*/
+
+.overlay-interests figure:nth-child(1){
+    margin-top: -145px;
+    margin-left: -240px;
+}
+
+.overlay-interests figure:nth-child(2){
+    margin-top: -210px;
+    margin-left: 0px;
+}
+
+.overlay-interests figure:nth-child(3){
+    margin-top: -125px;
+    margin-left: 185px;
+}
+
+.overlay-interests figure:nth-child(4){
+    margin-top: -10px;
+    margin-left: -290px;
+}
+
+.overlay-interests figure:nth-child(5){
+    margin-top: 0px;
+    margin-left: 200px;
+}
+
+
+.overlay-interests figure:nth-child(6){
+    margin-top: 120px;
+    margin-left: -235px;
+}
+
+.overlay-interests figure:nth-child(7){
+    margin-top: 112px;
+    margin-left: 135px;
+}
+ /*Experience*/
+.overlay-experience figure:nth-child(1){
+    margin-top: -165px;
+    margin-left: -240px;
+
+}
+
+.overlay-experience figure:nth-child(2){
+    margin-top: -230px;
+    margin-left: -30px;
+}
+
+.overlay-experience figure:nth-child(3){
+    margin-top: -168px;
+    margin-left: 165px;
+}
+
+.overlay-experience figure:nth-child(4){
+    margin-top: -10px;
+    margin-left: -290px;
+}
+
+.overlay-experience figure:nth-child(5){
+    margin-top: 0px;
+    margin-left: 200px;
+    text-shadow: 0px 0px 10px var(--pink), 0px 0px 20px var(--pink), 0px 0px 40px var(--pink);
+}
+
+.overlay-experience figure:nth-child(5):hover{
+    text-shadow: 0px 0px 10px var(--blue), 0px 0px 20px var(--blue), 0px 0px 40px var(--blue);
+}
+
+figure a {
+    color: var(--red);
+}
+
+.overlay-experience figure:nth-child(6){
+    margin-top: 118px;
+    margin-left: -202px;
+}
+
+.overlay-experience figure:nth-child(7){
+    margin-top: 112px;
+    margin-left: 135px;
 }
 
 @media(max-width: 768px){
@@ -371,12 +553,21 @@ small {
     }
 
     .overlay{
-        height: 100%;
+        height: 860px;
+        display: block;
+        position: absolute;
     }
 
     object{
         display: none;
     }
+
+    .overlay figure {
+        margin: 50px 0 0 0 !important;
+        position: static;
+    }
+
+  
 
 }
 
