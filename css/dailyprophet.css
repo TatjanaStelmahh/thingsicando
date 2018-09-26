@@ -1,4 +1,9 @@
 
+body{
+    background: whitesmoke;
+}
+
+
 .title{
     display: block;
     margin: auto;

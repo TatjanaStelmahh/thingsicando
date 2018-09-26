@@ -99,7 +99,7 @@ figure {
     position: absolute;
     backface-visibility: hidden;
     transform: rotateY( 180deg);
-    background-image: url('images/tatjana_stelmahh.jpg');
+    background-image: url('/images/tatjana_stelmahh.jpg');
     background-position: 0 0;
 }
 

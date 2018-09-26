@@ -1,0 +1,372 @@
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  background: black;
+  overflow-x: hidden; }
+
+.holder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 3;
+  top: -70.3vmin;
+  left: -128.6vmin;
+  width: 9.5vmin;
+  height: 3vmin;
+  border-radius: 1vmin;
+  background: var(--blue); }
+
+.holder-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 1;
+  top: -70.4vmin;
+  left: -128.6vmin;
+  width: 4vmin;
+  height: 4vmin;
+  border-radius: 50%;
+  border: 0.7vmin solid var(--blue);
+  background: black; }
+
+.paper-holder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  top: -40vmin;
+  left: -130vmin;
+  width: 24.1vmin;
+  height: 32.2vmin;
+  border-radius: 1vmin;
+  background: var(--blue);
+  overflow: hidden; }
+  .paper-holder:after {
+    content: "";
+    position: absolute;
+    left: 12.3vmin;
+    width: 20vmin;
+    height: 32.2vmin;
+    background: var(--blue); }
+  .paper-holder .paper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 2;
+    top: 0.3vmin;
+    left: 0.5vmin;
+    width: 20.3vmin;
+    height: 28.5vmin;
+    overflow: hidden;
+    background: var(--pink); }
+    .paper-holder .paper .line-grid {
+      margin-top: 2.75vmin;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-flow: row dense;
+      grid-row-gap: 1.5vmin; }
+      .paper-holder .paper .line-grid .line {
+        top: 3vmin;
+        width: 17.5vmin;
+        margin-left: 1.5vmin;
+        height: 0.8vmin;
+        background: #7d7d7e; }
+
+.iphone {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  top: 30.5vmin;
+  left: -100.6vmin;
+  width: 10.4vmin;
+  height: 20vmin;
+  background: var(--blue);
+  border-radius: 1vmin;
+  overflow: hidden; }
+  .iphone:before {
+    content: "";
+    position: absolute;
+    left: 5.26vmin;
+    width: 7vmin;
+    height: 20vmin;
+    background: var(--blue); }
+  .iphone:after {
+    content: "";
+    position: absolute;
+    left: 4.32vmin;
+    top: 17.6vmin;
+    width: 1.95vmin;
+    height: 1.95vmin;
+    background: var(--pink);
+    border-radius: 50%; }
+  .iphone .screen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    top: -0.65vmin;
+    width: 9.1vmin;
+    height: 15vmin;
+    background: var(--pink); }
+    .iphone .screen:before {
+      content: "";
+      position: absolute;
+      top: -1.64vmin;
+      left: 4.3vmin;
+      width: 0.63vmin;
+      height: 0.63vmin;
+      border-radius: 50%;
+      background: var(--pink); }
+    .iphone .screen:after {
+      content: "";
+      position: absolute;
+      top: -0.9vmin;
+      left: 3.5vmin;
+      width: 2.1vmin;
+      height: 0.4vmin;
+      border-radius: 1vmin;
+      background: var(--pink); }
+
+.laptop-screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  top: -26.2vmin;
+  left: -0.1vmin;
+  width: 71.4vmin;
+  height: 3.8vmin;
+  background: #35e7d3;
+  border-radius: 1vmin;
+  z-index: 100;
+  box-shadow: 0 16px 30px 10px aliceblue; }
+
+.laptop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  top: 17vmin;
+  width: 64.5vmin;
+  height: 40.8vmin;
+  background: var(--blue);
+  border-radius: 2.5vmin;
+  overflow: hidden; }
+  .laptop:after {
+    content: "";
+    position: absolute;
+    top: 24.7vmin;
+    left: 21.6vmin;
+    width: 21.2vmin;
+    height: 12.8vmin;
+    background: var(--pink);
+    border-radius: 0.5vmin; }
+  .laptop .shadow {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: -5vmin;
+    left: 19vmin;
+    width: 68vmin;
+    height: 32vmin;
+    background: #3ca6a2;
+    opacity: 0.2;
+    transform: rotate(45deg); }
+  .laptop .keyboard {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    top: -13.9vmin;
+    left: 0.8vmin;
+    width: 51.2vmin;
+    height: 19vmin; }
+    .laptop .keyboard .key {
+      width: 4vmin;
+      height: 3vmin;
+      border-radius: 0.2vmin;
+      background: var(--pink); }
+    .laptop .keyboard .keyboard-1 {
+      display: grid;
+      grid-template-columns: repeat(11, 1fr);
+      grid-column-gap: 0.6vmin; }
+      .laptop .keyboard .keyboard-1 .key {
+        height: 2.5vmin; }
+    .laptop .keyboard .keyboard-2 {
+      margin-top: 0.9vmin;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-column-gap: 0.6vmin; }
+      .laptop .keyboard .keyboard-2 .key-2 {
+        width: 8vmin; }
+    .laptop .keyboard .keyboard-3 {
+      margin-top: 0.9vmin;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-column-gap: 0.6vmin; }
+      .laptop .keyboard .keyboard-3 .key-3 {
+        width: 6.5vmin; }
+    .laptop .keyboard .keyboard-4 {
+      margin-top: 0.9vmin;
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      grid-column-gap: 0.6vmin; }
+      .laptop .keyboard .keyboard-4 .key-2 {
+        width: 8.5vmin; }
+    .laptop .keyboard .keyboard-5 {
+      margin-top: 0.9vmin;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-column-gap: 0.6vmin; }
+      .laptop .keyboard .keyboard-5 .key-4 {
+        width: 23.5vmin; }
+
+.mouse {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  top: 14.4vmin;
+  left: 108.2vmin;
+  width: 10.2vmin;
+  height: 18.8vmin;
+  background: var(--blue);
+  border-radius: 5vmin;
+  overflow: hidden; }
+  .mouse:before {
+    content: "";
+    position: absolute;
+    left: -4.8vmin;
+    width: 10vmin;
+    height: 18.8vmin;
+    background: var(--blue); }
+  .mouse:after {
+    content: "";
+    position: absolute;
+    top: 2.4vmin;
+    left: 4.3vmin;
+    width: 1.8vmin;
+    height: 1.8vmin;
+    border-radius: 50%;
+    background: #505156; }
+
+.cup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  top: -38.2vmin;
+  left: 140vmin;
+  width: 9.2vmin;
+  height: 9.2vmin;
+  background: #073b0c;
+  border-radius: 50%;
+  border: 2vmin solid var(--blue);
+  overflow: hidden; }
+  .cup:after {
+    content: "";
+    position: absolute;
+    left: 2vmin;
+    width: 10vmin;
+    height: 10vmin;
+    background: #09631f;
+    border-radius: 50%; }
+  .cup .froth {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 2;
+    top: 1.9vmin;
+    left: -1.2vmin;
+    width: 1.5vmin;
+    height: 1.5vmin;
+    border-radius: 50%;
+    background: #9bf3a6; }
+    .cup .froth:before {
+      content: "";
+      position: absolute;
+      top: -2.5vmin;
+      left: 1.2vmin;
+      width: 1.5vmin;
+      height: 1.5vmin;
+      border-radius: 50%;
+      background: #2ef180; }
+
+.cup-holder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  top: -28.8vmin;
+  left: 151.75vmin;
+  width: 2vmin;
+  height: 4vmin;
+  background: var(--blue);
+  border-bottom-left-radius: 5vmin;
+  border-bottom-right-radius: 5vmin;
+  transform: rotate(-50deg); }
+
+* {
+  transition: left 1s, top 1s; }
+
+@media (max-width: 768px) {
+  .paper-holder {
+    top: -60vmin;
+    left: 0vmin; }
+  .holder {
+    left: 0;
+    top: -90.3vmin; }
+  .holder-circle {
+    left: 0;
+    top: -90.4vmin; }
+  .laptop {
+    top: 40vmin; }
+  .laptop-screen {
+    top: -3.2vmin; }
+  .iphone {
+    top: 110vmin;
+    left: -31vmin; }
+  .mouse {
+    left: 30vmin;
+    top: 104.4vmin; }
+  .cup {
+    top: -47vmin;
+    left: 46vmin; }
+  .cup-holder {
+    top: -38.8vmin;
+    left: 59.75vmin; }
+  body {
+    padding-bottom: 30px; } }
