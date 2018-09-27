@@ -1,62 +1,62 @@
 @font-face{
     font-family: 'LumosLatino';
-    src: url('fonts/LumosLatino.ttf'); 
+    src: url('/fonts/LumosLatino.ttf'); 
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face{
     font-family: 'Xefora';
-    src: url('fonts/Xefora.ttf'); 
+    src: url('/fonts/Xefora.ttf'); 
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face{
     font-family: 'Harry';
-    src: url('fonts/Harry.TTF'); 
+    src: url('/fonts/Harry.TTF'); 
     font-style: normal;
     font-weight: 400;
 }
 @font-face{
     font-family: 'dum1';
-    src: url('fonts/dum1.ttf'); 
+    src: url('/fonts/dum1.ttf'); 
     font-style: normal;
     font-weight: 400;
 }
 @font-face{
     font-family: 'dum1ital';
-    src: url('fonts/dum1ital.ttf'); 
+    src: url('/fonts/dum1ital.ttf'); 
     font-style: normal;
     font-weight: 400;
 }
 @font-face{
     font-family: 'dum1out';
-    src: url('fonts/dum1out.ttf'); 
+    src: url('/fonts/dum1out.ttf'); 
     font-style: normal;
     font-weight: 400;
 }
 @font-face{
     font-family: 'dum1shad';
-    src: url('fonts/dum1shad.ttf'); 
+    src: url('/fonts/dum1shad.ttf'); 
     font-style: normal;
     font-weight: 400;
 }
 @font-face{
     font-family: 'dum1thin';
-    src: url('fonts/dum1shad.ttf'); 
+    src: url('/fonts/dum1shad.ttf'); 
     font-style: normal;
     font-weight: 200;
 }
 @font-face{
     font-family: 'dum1wide';
-    src: url('fonts/dum1wide.ttf'); 
+    src: url('/fonts/dum1wide.ttf'); 
     font-style: normal;
     font-weight: 600;
 }
 @font-face{
     font-family: 'dum13d';
-    src: url('fonts/dum13d.ttf'); 
+    src: url('/fonts/dum13d.ttf'); 
     font-style: normal;
     font-weight: 800;
 }

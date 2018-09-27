@@ -1,15 +1,26 @@
 
 body{
-    background: whitesmoke;
+    
+    background: black;
+    background-image: url('/images/dp2.png');
+   
+}
+
+main {
+    text-align: center;
+    
+}
+
+.subtitle{
+    font-family: 'LumosLatino';
+    font-size: 60px;
+    color: var(--blue);
+    margin-top: 35%;
 }
 
 
-.title{
-    display: block;
-    margin: auto;
-}
 
-.grid-body{
+/* .grid-body{
     display: grid;
     grid-template-columns: 20% 40% 40%;
     grid-template-rows:33.3% auto 33.3%;
@@ -33,5 +44,5 @@ body{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
-}
+} */
 
