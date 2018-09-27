@@ -3,6 +3,8 @@ body{
     
     background: black;
     background-image: url('/images/dp2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
    
 }
 

@@ -22,8 +22,10 @@ a {
 
 .grid-body {
     display: grid;
-    grid-template-columns: 230px 700px 320px;
+    grid-template-columns: 20% 50% 30%;
     grid-template-rows: 100px auto 100px;
+    max-width: 1250px;
+    margin: 0 auto;
 }
 
 

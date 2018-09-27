@@ -60,7 +60,7 @@ h1 {
 .text-item {
   display: inline-flex; }
   .text-item > div:hover {
-    transform: scale(2) !important;
+    transform: scale(1.6) !important;
     transition: transform .2s ease-in-out; }
 
 .white {

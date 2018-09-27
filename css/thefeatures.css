@@ -333,19 +333,6 @@ figure{
     margin-left: -400px;
 }
 
-.close{
-    position: absolute;
-    width: 90px;
-    height: 60px;
-    top: 14px;
-    right: 0px;
-    cursor: pointer;
-    background-image: url("/svg/close.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 60% 60%;
-}
-
 .visible {
     pointer-events: all;
     opacity: 1;
@@ -389,6 +376,13 @@ figure h2 {
     opacity: 0.4;
 }
 
+.overlay-css figure:nth-child(5){
+    margin-top: -23px;
+    margin-left: -28px;
+    text-align: center;
+    
+}
+
 /* JS */
 
 .overlay-js figure:nth-child(1){
@@ -404,6 +398,13 @@ figure h2 {
 .overlay-js figure:nth-child(3){
     margin-top: 49px;
     margin-left: 272px;
+}
+
+.overlay-js figure:nth-child(4){
+    margin-top: -14px;
+    margin-left: -53px;
+    text-align: center;
+    
 }
 
 
@@ -445,6 +446,14 @@ figure h2 {
     margin-left: 123px;
 }
 
+.overlay-soft-skills figure:nth-child(8){
+    margin-top: 31px;
+    margin-left: -9px;
+    text-align: center;
+    
+}
+
+
  /*Interests*/
 
 .overlay-interests figure:nth-child(1){
@@ -472,7 +481,6 @@ figure h2 {
     margin-left: 200px;
 }
 
-
 .overlay-interests figure:nth-child(6){
     margin-top: 120px;
     margin-left: -235px;
@@ -482,6 +490,14 @@ figure h2 {
     margin-top: 112px;
     margin-left: 135px;
 }
+
+.overlay-interests figure:nth-child(8){
+    margin-top: -6px;
+    margin-left: -41px;
+    text-align: center;
+    
+}
+
  /*Experience*/
 .overlay-experience figure:nth-child(1){
     margin-top: -165px;
@@ -526,6 +542,17 @@ figure a {
 .overlay-experience figure:nth-child(7){
     margin-top: 112px;
     margin-left: 135px;
+}
+
+.overlay-experience figure:nth-child(8){
+    margin-top: -5px;
+    margin-left: -55px;
+    text-align: center;
+    
+}
+
+.overlay-experience figure:nth-child(8) h2{
+    font-size:22px;
 }
 
 @media(max-width: 768px){
@@ -573,7 +600,8 @@ figure a {
         display: none;
     }
 
-    .overlay-js figure:nth-child(2), .overlay-js figure:nth-child(3){
+    .overlay-js figure:nth-child(2), .overlay-js figure:nth-child(3), .overlay-css figure:nth-child(5),
+    .overlay-js figure:nth-child(4), .overlay-interests figure:nth-child(8), .overlay-soft-skills figure:nth-child(8), .overlay-experience figure:nth-child(8){
         display:none;
     }
 

@@ -3,6 +3,7 @@ $(function() {
 
     $('figure').click(
         function() {
+            $(this).off();
             $(this).addClass('flipped');
 
             const target = $(this).data('target');

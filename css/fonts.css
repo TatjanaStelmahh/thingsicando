@@ -253,3 +253,21 @@ menu a:hover {
 }
 
 
+.close{
+    position: fixed;
+    width: 90px;
+    height: 60px;
+    top: 14px;
+    right: 0px;
+    cursor: pointer;
+    background-image: url("/svg/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% 60%;
+    z-index: 1000;
+    transition: opacity .3s;
+}
+
+.close:hover{
+    opacity: 0.7;
+}
