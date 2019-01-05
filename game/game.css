@@ -1,0 +1,19 @@
+.play{
+    
+    padding: 10px;
+    font-family: 
+    background-color: black;
+    color:  #13bdb7;
+    text-decoration: none;
+    margin-top: 81px;
+    width: 200px;
+    border: 2px solid  #13bdb7;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 1s, box-shadow 0.3s;
+    box-shadow: 0 0 0 0  #f2118d;
+}
+
+body{
+    background-color: black;
+}
