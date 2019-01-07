@@ -3,12 +3,10 @@ window.addEventListener("load",function() {
     .include("Scenes, Sprites, 2D, Input, Touch, UI, TMX, Audio")
     .include("ActionPlatformerPlayer, ActionPlatformerEnemy")
     .setup({
-      width: 1040,   //to fit devices with a screne resolution of 1280 x 720
-      height: 560,
-      maximize: true,
-      resampleWidth: true,
-      resampleHeight: true,
-      // scaleToFit: true,
+      width: 520,   //to fit devices with a screne resolution of 1280 x 720
+      height: 280,
+      // maximize: true,
+      scaleToFit: true,
     }).controls().touch();
 
     Q.enableSound();
